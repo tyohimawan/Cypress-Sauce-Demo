@@ -1,0 +1,7 @@
+{
+  "productTitle": "//div[@class='inventory_details_name large_size']",
+  "productDescription": "//div[@class='inventory_details_desc large_size']",
+  "productPrice": "//div[@class='inventory_details_price']",
+  "addToCartButton": "//button[contains(@data-test, 'add-to-cart')]",
+  "backToProductsButton": "//button[@data-test='back-to-products']"
+} 

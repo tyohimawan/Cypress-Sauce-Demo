@@ -1,0 +1,9 @@
+{
+  "cartItem": "//div[@class='cart_item']",
+  "itemName": "//div[@class='inventory_item_name']",
+  "itemDescription": "//div[@class='inventory_item_desc']",
+  "itemPrice": "//div[@class='inventory_item_price']",
+  "removeButton": "//button[contains(@data-test, 'remove')]",
+  "checkoutButton": "//button[@data-test='checkout']",
+  "continueShoppingButton": "//button[@data-test='continue-shopping']"
+} 

@@ -1,0 +1,5 @@
+{
+  "completeHeader": "//h2[@class='complete-header']",
+  "completeText": "//div[@class='complete-text']",
+  "backHomeButton": "//button[@data-test='back-to-products']"
+} 

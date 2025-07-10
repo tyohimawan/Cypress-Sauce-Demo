@@ -1,0 +1,8 @@
+{
+  "summaryInfo": "//div[@class='summary_info']",
+  "itemName": "//div[@class='inventory_item_name']",
+  "itemDescription": "//div[@class='inventory_item_desc']",
+  "itemPrice": "//div[@class='inventory_item_price']",
+  "finishButton": "//button[@data-test='finish']",
+  "cancelButton": "//button[@data-test='cancel']"
+} 
