@@ -1,0 +1,186 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-07-10T12:33:29.322Z",
+    "end": "2025-07-10T12:33:29.507Z",
+    "duration": 185,
+    "testsRegistered": 5,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 4,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "4eb91acb-c36f-4c94-ba07-8898c91b3aec",
+      "title": "",
+      "fullFile": "cypress\\e2e\\login\\login.cy.js",
+      "file": "cypress\\e2e\\login\\login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c1c2e24a-6c00-4d4b-bf76-b880be8048f8",
+          "title": "SauceDemo Login - Data Driven",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login attempt for user: standard_user",
+              "fullTitle": "SauceDemo Login - Data Driven Login attempt for user: standard_user",
+              "timedOut": null,
+              "duration": 135,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.fillUsername(user.username);\n_LoginPage.default.fillPassword(user.password);\n_LoginPage.default.submit();\nif (user.expected === 'success') {\n  cy.url().should('include', '/inventory');\n  _LoginPage.default.getError().should('not.exist');\n} else if (user.expected === 'locked_out') {\n  _LoginPage.default.getError().should('contain', 'locked out');\n} else if (user.expected === 'invalid') {\n  _LoginPage.default.getError().should('be.visible');\n}",
+              "err": {
+                "message": "TypeError: _LoginPage.default.visit is not a function\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `SauceDemo Login - Data Driven`",
+                "estack": "TypeError: _LoginPage.default.visit is not a function\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `SauceDemo Login - Data Driven`\n    at Context.eval (webpack://cypress-sauce-demo/./cypress/e2e/login/login.cy.js:8:14)\n    at runnable.fn (https://your-app-url.com/__cypress/runner/cypress_runner.js:141799:19)\n    at callFn (https://your-app-url.com/__cypress/runner/cypress_runner.js:160877:21)\n    at Runnable.run (https://your-app-url.com/__cypress/runner/cypress_runner.js:160864:7)\n    at <unknown> (https://your-app-url.com/__cypress/runner/cypress_runner.js:166954:30)\n    at PassThroughHandlerContext.finallyHandler (https://your-app-url.com/__cypress/runner/cypress_runner.js:4042:23)\n    at PassThroughHandlerContext.tryCatcher (https://your-app-url.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://your-app-url.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://your-app-url.com/__cypress/runner/cypress_runner.js:1546:18)",
+                "diff": null
+              },
+              "uuid": "0e1d82e2-8176-4917-acb0-0f08bd67493d",
+              "parentUUID": "c1c2e24a-6c00-4d4b-bf76-b880be8048f8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login attempt for user: locked_out_user",
+              "fullTitle": "SauceDemo Login - Data Driven Login attempt for user: locked_out_user",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.fillUsername(user.username);\n_LoginPage.default.fillPassword(user.password);\n_LoginPage.default.submit();\nif (user.expected === 'success') {\n  cy.url().should('include', '/inventory');\n  _LoginPage.default.getError().should('not.exist');\n} else if (user.expected === 'locked_out') {\n  _LoginPage.default.getError().should('contain', 'locked out');\n} else if (user.expected === 'invalid') {\n  _LoginPage.default.getError().should('be.visible');\n}",
+              "err": {},
+              "uuid": "fa2eae4c-7950-4e0b-a4a4-533258355357",
+              "parentUUID": "c1c2e24a-6c00-4d4b-bf76-b880be8048f8",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Login attempt for user: problem_user",
+              "fullTitle": "SauceDemo Login - Data Driven Login attempt for user: problem_user",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.fillUsername(user.username);\n_LoginPage.default.fillPassword(user.password);\n_LoginPage.default.submit();\nif (user.expected === 'success') {\n  cy.url().should('include', '/inventory');\n  _LoginPage.default.getError().should('not.exist');\n} else if (user.expected === 'locked_out') {\n  _LoginPage.default.getError().should('contain', 'locked out');\n} else if (user.expected === 'invalid') {\n  _LoginPage.default.getError().should('be.visible');\n}",
+              "err": {},
+              "uuid": "11f50d6a-6743-4d8e-84ed-a206907c9433",
+              "parentUUID": "c1c2e24a-6c00-4d4b-bf76-b880be8048f8",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Login attempt for user: performance_glitch_user",
+              "fullTitle": "SauceDemo Login - Data Driven Login attempt for user: performance_glitch_user",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.fillUsername(user.username);\n_LoginPage.default.fillPassword(user.password);\n_LoginPage.default.submit();\nif (user.expected === 'success') {\n  cy.url().should('include', '/inventory');\n  _LoginPage.default.getError().should('not.exist');\n} else if (user.expected === 'locked_out') {\n  _LoginPage.default.getError().should('contain', 'locked out');\n} else if (user.expected === 'invalid') {\n  _LoginPage.default.getError().should('be.visible');\n}",
+              "err": {},
+              "uuid": "cceabbb1-0958-4ec2-8b3d-67256e1bda17",
+              "parentUUID": "c1c2e24a-6c00-4d4b-bf76-b880be8048f8",
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "Login attempt for user: invalid_user",
+              "fullTitle": "SauceDemo Login - Data Driven Login attempt for user: invalid_user",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.fillUsername(user.username);\n_LoginPage.default.fillPassword(user.password);\n_LoginPage.default.submit();\nif (user.expected === 'success') {\n  cy.url().should('include', '/inventory');\n  _LoginPage.default.getError().should('not.exist');\n} else if (user.expected === 'locked_out') {\n  _LoginPage.default.getError().should('contain', 'locked out');\n} else if (user.expected === 'invalid') {\n  _LoginPage.default.getError().should('be.visible');\n}",
+              "err": {},
+              "uuid": "68bb8d46-0953-4842-a9c6-e83c20878f24",
+              "parentUUID": "c1c2e24a-6c00-4d4b-bf76-b880be8048f8",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "0e1d82e2-8176-4917-acb0-0f08bd67493d"
+          ],
+          "pending": [],
+          "skipped": [
+            "fa2eae4c-7950-4e0b-a4a4-533258355357",
+            "11f50d6a-6743-4d8e-84ed-a206907c9433",
+            "cceabbb1-0958-4ec2-8b3d-67256e1bda17",
+            "68bb8d46-0953-4842-a9c6-e83c20878f24"
+          ],
+          "duration": 135,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "usernameInput": "//input[@data-test=\"username\"]",
+  "passwordInput": "//input[@data-test=\"password\"]",
+  "loginButton": "//input[@data-test=\"login-button\"]",
+  "errorMessage": "//*[@data-test=\"error\"]"
+} 
