@@ -66,4 +66,15 @@ Cypress-Sauce-Demo/
 - Add more page objects and tests as your project grows.
 
 ---
+
+## 📊 CI Results Dashboard
+
+All CI/CD test results are automatically sent to this Google Sheet:
+
+[View CI Results in Google Sheets](https://docs.google.com/spreadsheets/d/1JVXpi54HQorHh6PlG4dZvEIIQ46Pnx0zrf2vGiEk5BY/edit)
+
+- Each row contains: Timestamp, Run ID, Job Status, Total Tests, Passed, Failed, Duration, Start, End.
+- You can add a chart in Google Sheets to visualize pass/fail trends over time (see Insert > Chart).
+
+---
 Happy Testing!
