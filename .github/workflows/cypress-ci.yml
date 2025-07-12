@@ -39,4 +39,17 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: mochawesome-report-${{ matrix.containers }}
-          path: cypress/reports/mochawesome/ 
+          path: cypress/reports/mochawesome/
+
+      - name: Install googleapis for GSheet integration
+        run: npm install googleapis
+        working-directory: .github/scripts
+
+      - name: Update Google Sheet with results
+        if: always()
+        run: node .github/scripts/update-gsheet.js
+        env:
+          GSHEETS_CREDENTIALS: ${{ secrets.GSHEETS_CREDENTIALS }}
+          SHEET_ID: 1JVXpi54HQorHh6PlG4dZvEIIQ46Pnx0zrf2vGiEk5BY
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          GITHUB_JOB_STATUS: ${{ job.status }} 
