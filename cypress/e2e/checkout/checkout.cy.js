@@ -23,6 +23,7 @@ describe('SauceDemo Checkout Flow', () => {
       loginPage.fillPassword(user.password);
       loginPage.submit();
       cy.url().should('include', '/inventory');
+      inventoryPage.getProductTitles().should('exist');
 
       // Add first product to cart
       inventoryPage.getProductTitles().first().invoke('text').then((productName) => {

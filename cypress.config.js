@@ -2,6 +2,7 @@ const { defineConfig } = require('cypress');
 const dotenvPlugin = require('cypress-dotenv');
 
 module.exports = defineConfig({
+  projectId: 'a3g94f',
   e2e: {
     setupNodeEvents(on, config) {
       config = dotenvPlugin(config);
